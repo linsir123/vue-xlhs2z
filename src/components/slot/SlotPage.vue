@@ -15,7 +15,7 @@
 
 <script>
 import SlotComponent1 from './demo1/SlotComponent1.vue';
-import SlotComponent2 from './SlotComponent2.vue';
+import SlotComponent2 from './demo2/SlotComponent2.vue';
 
 export default {
   name: 'SlotPage',
