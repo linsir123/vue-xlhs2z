@@ -24,7 +24,7 @@
 import VModelInput from './VModelInput.vue';
 
 export default {
-  name: 'VModelDemo1',
+  name: 'VModelPage',
 
   // 注册组件
   components: {
