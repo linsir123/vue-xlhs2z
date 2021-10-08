@@ -2,14 +2,14 @@
   <div>
     <button
       class="button"
-      v-for="tab in tabs"
-      :key="tab"
-      :class="['tab-button', { active: currentTab === tab }]"
-      @click="currentTab = tab"
+      v-for="(tab, i) in tabs"
+      :key="i"
+      :class="['tab-button', { active: currentTab === i }]"
+      @click="currentTab = i"
     >
-      {{ tab }}
+      {{ tab.title }}
     </button>
-    <component v-bind:is="currentTab" class="demo-tab"></component>
+    <component v-bind:is="currentTabName" class="demo-tab"></component>
   </div>
 </template>
 
@@ -20,16 +20,31 @@ import SlotComponent3 from './demo3/SlotComponent3.vue';
 
 export default {
   name: 'SlotPage',
+
+  // 组件注册
   components: {
     SlotComponent1,
     SlotComponent2,
     SlotComponent3,
   },
+
+  // data property
   data() {
     return {
-      currentTab: 'SlotComponent1',
-      tabs: ['SlotComponent1', 'SlotComponent2', 'SlotComponent3'],
+      currentTab: 0,
+      tabs: [
+        { title: '插槽内容', name: 'SlotComponent1' },
+        { title: '具名插槽', name: 'SlotComponent2' },
+        { title: '作用域插槽', name: 'SlotComponent3' },
+      ],
     };
+  },
+
+  // 计算属性
+  computed: {
+    currentTabName() {
+      return this.tabs[this.currentTab].name;
+    },
   },
 };
 </script>

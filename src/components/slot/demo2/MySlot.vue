@@ -1,7 +1,5 @@
 <template>
   <div>
-    <h4>具名插槽</h4>
-
     <header>
       <slot name="header"></slot>
     </header>
