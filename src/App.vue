@@ -1,15 +1,18 @@
 <template>
   <div id="app"></div>
-  <v-model-demo1></v-model-demo1>
+  <!--<v-model-demo1></v-model-demo1>-->
+  <slot-page></slot-page>
 </template>
 
 <script>
 import VModelDemo1 from './components/vmodel/VModelDemo1.vue';
+import SlotPage from './components/slot/SlotPage.vue';
 
 export default {
   name: 'App',
   components: {
     VModelDemo1,
+    SlotPage,
   },
 };
 </script>
