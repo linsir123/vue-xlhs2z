@@ -16,17 +16,19 @@
 <script>
 import SlotComponent1 from './demo1/SlotComponent1.vue';
 import SlotComponent2 from './demo2/SlotComponent2.vue';
+import SlotComponent3 from './demo3/SlotComponent3.vue';
 
 export default {
   name: 'SlotPage',
   components: {
     SlotComponent1,
     SlotComponent2,
+    SlotComponent3,
   },
   data() {
     return {
       currentTab: 'SlotComponent1',
-      tabs: ['SlotComponent1', 'SlotComponent2'],
+      tabs: ['SlotComponent1', 'SlotComponent2', 'SlotComponent3'],
     };
   },
 };
