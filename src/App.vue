@@ -1,7 +1,8 @@
 <template>
-  <div id="app"></div>
-  <v-model-page></v-model-page>
-  <!--<slot-page></slot-page>-->
+  <div id="app" class="demo">
+    <!--<v-model-page></v-model-page>-->
+    <slot-page></slot-page>
+  </div>
 </template>
 
 <script>
@@ -25,5 +26,16 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.demo {
+  font-family: sans-serif;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  padding: 20px 30px;
+  margin-top: 1em;
+  margin-bottom: 40px;
+  user-select: none;
+  overflow-x: auto;
 }
 </style>

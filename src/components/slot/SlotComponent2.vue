@@ -1,9 +1,9 @@
 <template>
-  <div>SlotComponent1</div>
+  <div>SlotComponent2</div>
 </template>
 
 <script>
 export default {
-  name: 'SlotComponent1',
+  name: 'SlotComponent2',
 };
 </script>
