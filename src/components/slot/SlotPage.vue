@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import SlotComponent1 from './SlotComponent1.vue';
+import SlotComponent1 from './demo1/SlotComponent1.vue';
 import SlotComponent2 from './SlotComponent2.vue';
 
 export default {
