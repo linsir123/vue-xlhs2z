@@ -1,19 +1,22 @@
 <template>
   <div id="app" class="demo">
     <!--<v-model-page></v-model-page>-->
-    <slot-page></slot-page>
+    <!--<slot-page></slot-page>-->
+    <setup-page></setup-page>
   </div>
 </template>
 
 <script>
 import VModelPage from './components/vmodel/VModelPage.vue';
 import SlotPage from './components/slot/SlotPage.vue';
+import SetupPage from './components/setup/SetupPage.vue';
 
 export default {
   name: 'App',
   components: {
     VModelPage,
     SlotPage,
+    SetupPage,
   },
 };
 </script>

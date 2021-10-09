@@ -20,6 +20,10 @@
         :model-value="searchText"
         @update:model-value="searchText = $event"
       ></custom-input>
+
+
+      计算属性默认只有 getter，不过在需要时你也可以提供一个 setter
+      现在再运行 vm.searchText = 'John Doe' 时，setter 会被调用
     -->
     last name:
     <input :value="last" @input="$emit('update:last', $event.target.value)" />
